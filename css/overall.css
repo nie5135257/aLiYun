@@ -1,0 +1,288 @@
+/* --------------------#nav---------------------- */
+#nav{
+	position: absolute;
+	top: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	min-width: 1024px;
+	background-color: rgba(34, 37, 46, 0.2);
+}
+#nav:hover{
+	background-color: rgba(34, 37, 46, 1);
+}
+
+
+
+#nav .navOne{
+	background-color: rgba(34, 37, 46, 0.2);
+	margin: 0;
+	border-color: rgba(34, 37, 46, 0.2);
+	border-radius: 0px;  
+	height: 51px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+}
+/* --------------------#nav---------------------- */
+
+/* ------------------- #nav .navOne #list  ------------------------------- */
+#list{
+	width: 990px;
+	/* overflow: hidden; */
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 0px;
+}
+#list .item{
+	display: block;
+	height: 100%;
+	float: left;
+	font-size: 14px;
+}
+
+#list .itemOne{
+	background-color: #1E1F24;
+	width: 200px;
+	position: absolute;
+}
+#list ul li{
+	padding: 0 10px;	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#list ul li a{
+	color: #fff;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: 50px;
+	line-height: 50px;
+}
+#list ul li a:hover{
+	color: #00C1DE;
+}
+#list .divider{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+}
+#list ul li a span{
+	float: right;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 50px;
+}
+#list ul li a span img{
+	width: 15px;
+	height: 15px;
+	padding: 0px;
+}
+/* ------------------- #nav .navOne #list  ------------------------------- */
+
+/* -------------------- #nav .navOne #list .itemTwo ------------------------- */
+#list .listTwoBox{
+	position: absolute;
+	top: 0px;
+	margin-left: 200px;
+	height: 100%;
+	overflow: hidden;
+}
+#list .itemTwo{
+	background-color: #292B30;			
+	margin-left: 0px;	
+}
+#list .itemTwo .active{
+	display: block;
+}
+#list .itemTwo table{
+	display: block;
+	width: 100%;
+	width: 750px;
+	display: none;
+	margin: 0 20px;
+	overflow: hidden;
+}
+#list .itemTwo table a{
+	color: #fff;
+	width: 100%;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+}
+#list .itemTwo table th a{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 20px 0px 5px;
+}
+#list .itemTwo .open th a{
+	width: 150px;
+	margin-right: 10px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 20px 0px 5px;
+	border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+}
+#list .itemTwo table td{
+	font-size: 12px;
+	padding: 10px 20px 5px 5px;
+}
+#list .itemTwo table td a:hover{
+	color: #00C1DE;
+}
+#list .itemTwo table td a span{
+	margin-left: 3px;
+	color: #E2520C;
+	font-weight: bold;
+}
+/* -------------------- #nav .navOne #list .itemTwo ------------------------- */
+
+/* ---------------------------#nav .navOne .navOne-header-------------------------------- */
+#nav .navOne .navOne-header{
+	position: relative;
+	height: 49px;
+	line-height: 49px;
+	float: left;
+}
+#nav .navOne .navOne-brand{
+	padding: 0px;
+}
+#nav .navOne .navOne-brand .listImg>img{
+	padding: 16px;
+	width: 50px;
+	height: 50px;
+	border-right: 1px solid rgba(204, 204, 204, 0.3);
+}
+#nav .navOne .navOne-brand .listImg:hover >img{
+	background-color: #00C1DE; 
+	cursor: pointer;
+}
+#nav .navOne .navOne-header .logo img{
+	padding: 15px;
+	height: 50px;
+	width: auto;
+	position: absolute;
+	top: 0;
+}
+/* ------------------------------#nav .navOne .navOne-header------------------------ */
+
+/* ---------------------  #nav .navOne .navbar .minCollapse------------------------- */
+.navOne .minCollapse{
+	padding: 0px;
+	float: right;
+	background-color: rgba(34, 37, 46, 0.3);
+}
+#nav .navOne .minCollapse ul li{
+	display: inline-block;
+}
+#nav .navOne .minCollapse ul li a{
+	color: #fff;
+	height: 45px;
+}
+#nav .navOne .minCollapse ul li a:hover{
+	text-decoration: none;
+	color: #00C1DE;
+	background-color: rgba(34, 37, 46, 1);
+}
+#nav .navOne .minCollapse ul li a:visited{
+	text-decoration: none;
+	background-color: rgba(34, 37, 46, 0.3);
+}
+#nav .navOne .minCollapse ul li a:link{
+	text-decoration: none;
+}
+
+#nav .navOne .minCollapse ul li .cart{
+	width: 20px;
+	margin-right: 3px;
+}
+
+#nav .navOne .minCollapse ul .open>a{
+	color: #00C1DE;
+}
+#nav .navOne .minCollapse ul .open a{
+	background-color:rgba(34, 37, 46, 1);
+}
+#nav .navOne .minCollapse ul li input{
+	height: 50px;
+	width: 200px;
+	line-height: 50px;
+	background-color: #444A4F;
+	display: inline;
+	border-radius: 0px;
+	border: none;
+	color: #fff;
+}
+#nav .navOne .minCollapse ul li input:hover,focus{
+	border: 1px solid #00C1DE;
+}
+#nav .navOne .minCollapse ul li input:focus{
+	border: 1px solid #00C1DE;
+	outline: none;
+    box-shadow: 0 0 5px #00C1DE;
+    border-radius: 0px;
+}
+#nav .navOne .minCollapse ul li .searchPosition{
+	position: relative;
+	padding: 0;
+}
+#nav .navOne .minCollapse ul li .search{
+	width: 50px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 16px;
+}
+#nav .navOne .minCollapse ul li .dropdown-menu{
+	padding: 0px;
+	left: -5px;
+	width: auto;
+}
+#nav .navOne .minCollapse ul li .dropdown-menu li a{
+	padding: 5px 15px;
+	width: 182px;
+}
+/* ---------------------  #nav .navOne .navbar .minCollapse------------------------- */
+
+/* ---------------------#nav .navTwo------------------------- */
+#nav .navTwo{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+}
+#nav .navTwo ul{
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
+#nav .navTwo ul li{
+	margin: 0 15px;
+	float: left;
+}
+#nav .navTwo ul li a{
+	color: #fff;
+	height: 49px;
+	line-height: 49px;
+}
+#nav .navTwo ul li a:hover{
+	color: #00C1DE; 
+}
+#nav .navTwo .pull-right p{
+	background-color: #00C1DE; 
+	height: 49px;
+	line-height: 49px;
+	width: 100px;
+	text-align: center;
+	margin: 0px;
+	color: #fff;
+	cursor: pointer;
+}
+/* ---------------------#nav .navTwo------------------------- */
+
+#ity{
+	padding: 100px;
+}

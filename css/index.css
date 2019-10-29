@@ -1,0 +1,528 @@
+  body{
+  	width: 100%;
+  	min-width: 1024px;
+  	height: 4000px;
+  }
+ body .container{
+	/* max-width: 1300px; */
+	min-width: 1024px;
+	border: none;
+	padding: 0px;
+}
+a:hover{
+	text-decoration: none;
+}
+
+
+#header{
+	width: 100%;
+	background-color: #22252E;
+	position: relative;
+	max-height: 640px;
+}
+#header #myCarousel{
+	position: relative;
+	height: 640px;
+	overflow: hidden;
+}
+
+/* -----------------------轮播图  item------------------ */
+#header #myCarousel .item{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 30%;
+	opacity: 0;
+}
+#header #myCarousel .active{
+	top: 0px;
+	opacity: 1;
+	z-index: 1;
+}
+#header #myCarousel .item .imgs img{
+	height: 640px;
+	/* margin-left: -500px; */
+	position: absolute;
+}
+/* -----------------------轮播图  item------------------ */
+
+/* -----------------------轮播图  ttl------------------ */
+#header #myCarousel .item .ttl{
+	position: absolute;
+	top: 30%;
+	color: #fff;
+}
+#header #myCarousel .item .ttl h1{
+	padding: 5px 0px;
+	font-size: 38px;
+}
+#header #myCarousel .item .ttl p{
+	padding: 0px 0px 10px;
+	font-size: 18px;
+}
+#header #myCarousel .item .ttl a{
+	color: #fff;
+	padding: 5px;
+	border-bottom: 2px solid #00C1DE;
+	font-size: 20px;
+}
+#header #myCarousel .item .ttl a i{
+	font-size: 16px;
+}
+#header #myCarousel .item .ttl a:hover{
+	text-decoration: none;
+	color: #00C1DE;
+}
+/* -----------------------轮播图  ttl------------------ */
+
+
+
+/* -------------------图片加载进度条--------------------- */
+#header #progress{
+
+	width: 20%;
+	max-width: 200px;
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	margin-left: -5%;
+	z-index: 2;
+}
+#header #progress .progress{
+	width: 20%;
+	height: 5px;
+	float: left;
+	margin-right: 5%;
+	background-color: #484A50;
+}
+#header #progress .progress-bar{
+	width: 0%;
+	background-color: #fff;
+}
+/* -------------------图片加载进度条--------------------- */
+
+
+
+/* -------------------#header .headerBottom--------------------- */
+#header .headerBottom{
+	width: 100%;
+	background-color: #393B43;
+	position: absolute;
+	bottom: 0px;
+	z-index: 10;
+}
+#header .headerBottom .bottomItem{
+	color: #fff;
+	float: left;
+	width: 20%;
+	padding: 10px;
+	border-right: 1px solid #484950;
+}
+#header .headerBottom .bottomItem:hover{
+	cursor: pointer;
+	background-color: #45464E;
+}
+#header .headerBottom .bottomItem:first-child{
+	border-left: 1px solid #484950;
+}
+#header .headerBottom .bottomItem p{
+	color: #ccc;
+}
+/* ------------------- #header .headerBottom --------------------- */
+
+
+
+
+/* ------------------- #product ------------------- */
+/* ------------------- #product .product-top --------------------- */
+#product {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+#product .product-top img {
+	width: 150px;
+}
+#product .product-top h3 {
+	padding: 10px;
+} 
+#product .product-body {
+	margin-top: 60px;
+}
+/* ------------------- #product .product-top --------------------- */
+
+/*----------- #product ul li -------------*/
+#product .product-body ul li {
+	width: 20%;
+	text-align: center;
+	border: none;
+	margin: 0px;
+}
+#product .product-body ul li a {
+	border: none;
+	margin: 0px;
+	color: #000;
+}
+#product .product-body ul li a:hover {
+	background-color: #fff;
+	color: #1AC9E3;
+}
+#product .product-body ul li img {
+	width: 45%;
+	margin: 0 auto;
+}
+#product .product-body ul li a .imgBox img:last-child {
+	display: none;
+}
+#product .product-body ul .active a .imgBox img:last-child {
+	display: block;
+}
+.pdImgOne{
+	display: none;
+}
+
+#product .product-body .bottom{
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: 8px 20px; 
+	width: 140px;
+	margin: 20px auto 40px;
+}
+#product .product-body .bottom:hover{
+	color: #1AC9E3;
+	border-color: #1AC9E3;
+	cursor: pointer;
+}
+/*----------- #product ul li -------------*/ 
+
+/*----------- #product pdToggle -------------*/
+#product .myHide{
+	display: none;
+}
+#product .myPanel .pdToggle{
+ 	display: none;
+	background-color: #F5F5F6;
+	text-align: left;
+}
+#product .myPanel .active{
+ 	display: block;
+}
+
+#product .myPanel .pdToggle p{
+	font-size: 12px;
+	color: #9B9EA0;
+}
+#product .myPanel .pdToggle h5{
+	color: #373D41;
+	margin-bottom: 5px;
+}
+#product .myPanel .pdToggle .icon{
+	height: 11px;
+	margin-bottom: 4px;
+}
+#product .myPanel .pdToggle .row{
+	margin: 20px;
+	display: none;
+}        
+#product .myPanel .pdToggle .container .active{
+	display: block;
+}
+
+#product .myPanel .pdToggle .icon-index{
+	width: 15px;
+	height: 15px;
+	background-color: #F5F5F6;
+
+	transform: rotate(45deg);
+	-ms-transform:rotate(45deg); /* IE 9 */
+	-webkit-transform:rotate(45deg); /* Safari and Chrome */
+
+	position: relative;
+	top: -7.5px;
+	left: 110px;
+}
+
+
+
+/************* item **************/
+#product .myPanel .pdToggle .item{
+	margin: 0px 0px 45px;
+}
+#product .myPanel .pdToggle .item h4{
+	font-weight: bold;
+	color: #373D41;
+	margin: 0px;
+	padding-bottom: 10px; 
+}
+#product .myPanel .pdToggle .item .ttl{
+	margin: 10px;
+}
+#product .myPanel .pdToggle .item .ttl:hover h4{
+	color: #1AC9E3;
+
+}
+#product .myPanel .pdToggle .item .btn{
+	border: 1px solid #373D41;
+	border-radius: 0px;
+	color: #373D41;
+	padding: 6px 16px;
+	float: left;
+	margin-top: 10px;
+}
+#product .myPanel .pdToggle .item .btn:hover{
+	border-color: #1AC9E3;
+	color: #1AC9E3;
+}
+/************ pdttl ***************/
+#product .myPanel .pdToggle .pdttl>div{
+	padding: 5px 10px;
+}
+#product .myPanel .pdToggle .pdttl>div:hover{
+	background-color: #fff;
+	box-shadow: 1px 1px 5px #ccc;
+	cursor: pointer;
+}
+#product .myPanel .pdToggle .pdttl>div:hover .fr{
+	display: block;
+}
+#product .myPanel .pdToggle .pdttl .fr{
+	float: right;
+	font-size: 16px;
+	height: 24px;
+	color: #373D41;
+	line-height: 60px;
+	display: none;
+}
+
+/*----------- #product pdToggle -------------*/ 
+
+
+
+/*----------- 解决方案 #solution -------------*/ 
+
+#solution{
+   background-color: #373D41;
+}
+#solution .container{
+	overflow: hidden;
+	position: relative;
+}
+
+#solution .btn_icon{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	background-color: rgba(55, 61, 65, 0.3);
+	cursor: pointer;
+	display: none;
+}
+#solution .btn_fl{
+	left: 0px;
+}
+#solution .btn_fr{
+	right: 0px;
+}
+#solution .btn_icon div{
+	position: relative;
+	top: 43%;
+	font-size: 30px;
+}
+
+#solution ul{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	left: 0px;
+}
+#solution ul li{
+	float: left;
+	text-align: center;
+	position: relative;
+}
+#solution ul li>img{
+	width: 234px;
+	opacity: 0.5;
+}
+#solution ul li .txt{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	overflow: hidden;
+}
+#solution ul li .txt:hover{
+	background-color: rgba(51, 205, 229, 0.8);
+	cursor: pointer;
+}
+#solution ul li .txt .icon img{
+	display: block;
+	width: 65px;
+	margin: 60px auto 15px;
+}
+#solution ul li .txt .icon .myHide{
+	display: none;
+}
+#solution ul li .txt .line{
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+#solution ul li .txt .ttl h4{
+	margin-top: 20px;
+	font-weight: bold;
+}
+#solution ul li .txt .ttl .center{
+	opacity: 0;
+}
+#solution ul li .txt .ttl .center p{
+	padding: 10px 20px 20px;
+}
+#solution ul li .txt .ttl .center .myBtn{
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	width: 100px;
+	margin: 0px auto;
+}
+/*----------- 解决方案 #solution -------------*/
+
+
+/*----------- 服务 server -------------*/
+#server{
+	margin: 20px 0;
+	text-align: center;
+}
+#server .top{	
+	margin: 100px;
+}
+#server .top h4{
+	margin: 20px;
+	font-size: 16px;
+	color: #5F6367;
+}
+#server .top h4:hover{
+	color: #33CDE5;
+	cursor: pointer;
+}
+
+#server .row{
+	margin-bottom: 50px;
+}
+
+#server .row .ttl{
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+}
+#server .row .ttl:hover{
+	color: #33CDE5;
+	cursor: pointer;
+}
+#server .row .ttl .icon{
+	width: 100px;
+	height: 70px;
+	overflow: hidden;
+}
+#server .row .ttl .icon img{
+	position: relative;
+	top: 0;
+	width: 70px;
+	display: block;
+	margin: 0 auto;
+}
+#server .row .ttl h4{
+	font-weight: bold;
+	font-size: 20px;
+}
+#server .row .txt{
+	color: #A9B0B4;
+}
+#server .row .txt span{
+	margin: 0 10px;
+}
+#server .row .txt span:hover{
+	cursor: pointer;
+	color: #33CDE5;
+}
+/*----------- 服务 server -------------*/
+
+
+
+/*----------- 社区 community -------------*/
+#community{
+	margin: 20px 0;
+	text-align: center;
+	background-color: #F5F5F5;
+}
+#community a{
+	color: #000;
+}
+#community a:hover{
+	color: #33CDE5;
+}
+#community .top{	
+	margin: 80px;
+}
+#community .top h4{
+	margin: 20px;
+	font-size: 16px;
+	color: #5F6367;
+}
+#community .top h4:hover{
+	color: #33CDE5;
+	cursor: pointer;
+}
+#community .row{
+	margin-bottom: 80px;
+}
+#community .row .ttl{
+	border: 1px solid #C5D8DB;
+	margin-bottom: 30px;	
+}
+#community .row .ttl:hover{
+	box-shadow: 1px 1px 20px #ccc;
+}
+#community .row .ttl:hover img{	
+	-ms-transform:scale(1.1,1.1); /* IE 9 */
+	-webkit-transform: scale(1.1,1.1); /* Safari */
+	transform: scale(1.1,1.1); /* 标准语法 */
+}
+#community .row .ttl .imgBox{
+	width: 100%;
+	height: 170px;
+	overflow: hidden;
+}
+#community .row .ttl img{
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform 0.5s;
+}
+#community .row .ttl p{
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 0;
+}
+/*----------- 社区 community -------------*/
+
+
+
+/*----------- 数据 data -------------*/
+#data{
+	margin: 20px 0;
+	text-align: center;
+}
+#data .top{	
+	margin: 100px;
+}
+#data .top h4{
+	margin: 20px;
+	font-size: 16px;
+	color: #5F6367;
+}
+#data .top h4:hover{
+	color: #33CDE5;
+	cursor: pointer;
+}
+/*----------- 数据 data -------------*/
